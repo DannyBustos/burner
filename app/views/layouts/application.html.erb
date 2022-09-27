@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prueba</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <p><b>Aplicacion de clientes </b> &nbsp; <%= link_to "Nuevo", new_client_path %></p>
+    <%= yield %>
+  <p><b>2022 </b></p>
+  </body>
+</html>
